@@ -1,0 +1,314 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Videograph Template">
+    <meta name="keywords" content="Videograph, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Videograph | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static "css/inmobiliaria.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/elegant-icons.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/owl.carousel.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/magnific-popup.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/slicknav.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/style.css" %}" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href=""><img src="" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav__option">
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                                <li class="active"><a href="{% url 'inmobiliaria:index' %}">INICIO</a></li>
+                                <li><a href="{% url 'inmobiliaria:about' %}">acerca de</a></li>
+                                <li><a href="{% url 'inmobiliaria:portfolio' %}">VIVIENDAS</a></li>
+                                <li><a href="">SERVICIOS</a></li>
+                                <li><a href="">Paginas</a>
+                                    <ul class="dropdown">
+                                        <li><a href="{% url 'inmobiliaria:blog' %}">contacto</a></li>
+                                        <li><a href="{% url 'inmobiliaria:contact' %}">Viviendas</a></li>
+                                        <li><a href="">Blog</a></li>
+                                        <li><a href="">Detalles de blog</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">contacto</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__nav__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option spad set-bg" data-setbg="{% static "img/breadcrumb-bg.jpg" %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Nuestro Blog</h2>
+                        <div class="breadcrumb__links">
+                            <a href="#">Inicio</a>
+                            <span>Blog</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Blog Section Begin -->
+    <section class="blog spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog__item">
+                        <h4>Que hace que los clientes quieran compartir sus experiencias de nuestro servicio?</h4>
+                        <ul>
+                            <li>Dic 10, 2023</li>
+                            <li>05 Comentarios</li>
+                        </ul>
+                        <p>Como nuestra inmobiliaria se caracteriza por el buen servicio y acompañamiento en los clientes, ya nuestros clientes lo han notado y nos han traido a muchas personas interesadas en algunas de nuestros proyectos o viviendas...</p>
+                        <a href="#">Leer más <span class="arrow_right"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog__item">
+                        <h4>Nuevos proyectos</h4>
+                        <ul>
+                            <li>Dic 10, 2023</li>
+                            <li>05 Comentarios</li>
+                        </ul>
+                        <p>Recientemente lanzamos unos nuevos proyectos de viviendas que muchas personas ya nos hablaron con anticipacion...</p>
+                        <a href="#">Leer más <span class="arrow_right"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog__item">
+                        <h4>Marketing de nuestras viviendas por medio de nuestros clientes</h4>
+                        <ul>
+                            <li>Dic 10, 2023</li>
+                            <li>05 Comentarios</li>
+                        </ul>
+                        <p>Nuestros clientes nos han propuesto y dicho que por nuestro gran servicio, han decidido hacernos marketing por medio de muchos amigos influyentes que tienes y si hemo aceptado...</p>
+                        <a href="#">Leer más<span class="arrow_right"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog__item">
+                        <h4>Brindamos la posibilad de adquirir una vivienda a credito</h4>
+                        <ul>
+                            <li>Dic 10, 2023</li>
+                            <li>05 Comment</li>
+                        </ul>
+                        <p>si asi como han visto, nosotros brindamos la posibilidad de que adquieras la casa de tus sueños a credito...</p>
+                        <a href="#">Leer más <span class="arrow_right"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog__item">
+                        <h4>Marketing de contratacion para la era digital</h4>
+                        <ul>
+                            <li>Dic 10, 2023</li>
+                            <li>05 Comentarios</li>
+                        </ul>
+                        <p>Como muy bien saben estamos en el pum de las redes sociales y queremos disfrutarlas al maximo para presentarles nuestros proyectos por medio de nuestro equipo de marketing que hemos estado contratando en la empresa...</p>
+                        <a href="#">Leer más <span class="arrow_right"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog__item">
+                        <h4>Queremos brindarles grandes descuentos para que celebren su navidad con su casa de sus sueños</h4>
+                        <ul>
+                            <liD> Dic 10, 2023</li>
+                            <li>05 Comentarios</li>
+                        </ul>
+                        <p>Asi es tenemos grandes descuentos, para que adquieran su vivienda al mejor precio y calidad disponible...</p>
+                        <a href="#">Read more <span class="arrow_right"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog__item">
+                        <h4>Personal especializado en brindarle la mejor ayuda en su eleccion de sus viviendas...</h4>
+                        <ul>
+                            <li>Dic 10, 2023</li>
+                            <li>05 Comentarios</li>
+                        </ul>
+                        <p>Vengan y vean la vivienda que quieran y nuestro personas les mostrara y ayudara a elejir la mejor, aunque todas son las mejores...</p>
+                        <a href="#">Leer más <span class="arrow_right"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog__item">
+                        <h4>Queremos que disfruten esta navidad...</h4>
+                        <ul>
+                            <li>Dic 10, 2023</li>
+                            <li>05 Comentarios</li>
+                        </ul>
+                        <p>Se vienen sorteos y muchas oportunidades para que obtengan y ganen su preciada casa...</p>
+                        <a href="#">Leer más<span class="arrow_right"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog__item">
+                        <h4>Porque queremos regalar casas?</h4>
+                        <ul>
+                            <li>Dic 10, 2023</li>
+                            <li>05 Comentarios</li>
+                        </ul>
+                        <p>Queremos que muchas personas tengan la posibilidad de tener su maravillosa vivienda y con todos los servicios pagos por un año...</p>
+                        <a href="#">Leer más <span class="arrow_right"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pagination__option blog__pagi">
+                        <a href="#" class="arrow__pagination left__arrow"><span class="arrow_left"></span> Anterior</a>
+                        <a href="#" class="number__pagination">1</a>
+                        <a href="#" class="number__pagination">2</a>
+                        <a href="#" class="arrow__pagination right__arrow">Siguiente<span class="arrow_right"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__logo">
+                            <a href="#"><img src="{% static "img/logo.png" %}" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__option">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer__option__item">
+                            <h5>Sobre nosotros</h5>
+                            <p>Formada en 2020 por jesus stone y Tamara castillo,
+                                profailantismo es una inmobiliaria especializada en servicios completos y de la mas alta calidad.</p>
+                            <a href="#" class="read__more">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer__option__item">
+                            <h5>Quienes somos</h5>
+                            <ul>
+                                <li><a href="#">Equipo</a></li>
+                                <li><a href="#">Viviendas</a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#">Ubicacion</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer__option__item">
+                            <h5>Contactenos</h5>
+                            <form>
+                                <form action="https://formsubmit.co/agamezcastillojesus@gmail.com" method="POST">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                        
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                        
+                                <label for="coments">Mensaje</label>
+                                       <textarea name="comments" id="" cols="13" rows="2"></textarea>
+                                
+                                       <input type="submit" value="Enviar">
+                                
+                      <input type="hidden" name="_next" value="http://localhost:5173">
+                     <input type="hidden" name="_captcha" value="false">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="footer__option__item">
+                     
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <p class="footer__copyright__text"> &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            <i class="fa fa-heart-o"
+                                aria-hidden="true"></i>  <a href="https://colorlib.com" target="_blank"></a>
+                        </p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="{% static "js/jquery-3.3.1.min.js" %}"></script>
+    <script src="{% static "js/inmobiliaria.min.js" %}"></script>
+    <script src="{% static "js/jquery.magnific-popup.min.js" %}"></script>
+    <script src="{% static "js/mixitup.min.js" %}"></script>
+    <script src="{% static "js/masonry.pkgd.min.js" %}"></script>
+    <script src="{% static "js/jquery.slicknav.js" %}"></script>
+    <script src="{% static "js/owl.carousel.min.js" %}"></script>
+    <script src="{% static "js/main.js" %}"></script>
+</body>
+
+</html>

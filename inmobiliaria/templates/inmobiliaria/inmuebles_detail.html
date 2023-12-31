@@ -1,0 +1,198 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Videograph Template">
+    <meta name="keywords" content="Videograph, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inmobiliaria | Profailantismo</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'css/inmobiliaria.min.css' %} " type="text/css">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    
+
+    <!-- About Section Begin -->
+    <section class="about spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about__pic">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="about__pic__item about__pic__item--large set-bg"
+                                    data-setbg="{{ inmueble.foto_portada.url }}"></div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="about__pic__item set-bg" data-setbg="{{ inmueble.foto_portada.url }}"></div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="about__pic__item set-bg" data-setbg="{{ inmueble.foto_portada.url }}"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about__text">
+                        <div class="section-title">
+                            <h2>{{inmueble.nombre}}</h2>
+                            <span>{{inmueble.descripcion}}</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__item">
+                                    <div class="services__item__icon">
+                                        <img src="{% static 'img/icons/si-3.png' %}" alt="">
+                                    </div>
+                                    <h4>Distribucion de viviendas</h4>
+                                    <p>Ya sea que estés en la mitad del proceso de tu vivienda.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__item">
+                                    <div class="services__item__icon">
+                                        <img src="{% static 'img/icons/si-4.png' %}" alt="">
+                                    </div>
+                                    <h4>Alojamiento de viviendas</h4>
+                                    <p>Ya sea que quieras apartar una casa o ir abonando para comprar tu vivienda.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about__text__desc">
+                            <p>Formada en 2020 por jesus stone y Tamara castillo,
+                                profailantismo es una inmobiliaria especializada en servicios completos y de la mas alta calidad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__logo">
+                            <a href="#"><img src="{% static 'img/logo.png' %}" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__option">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer__option__item">
+                            <h5>Sobre nosotros</h5>
+                            <p>Formada en 2020 por jesus stone y Tamara castillo,
+                                profailantismo es una inmobiliaria especializada en servicios completos y de la mas alta calidad.</p>
+                            <a href="#" class="read__more">Leer más <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer__option__item">
+                            <h5>Quienes somos</h5>
+                            <ul>
+                                <li><a href="#">Equipo</a></li>
+                                <li><a href="#">Viviendas</a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#">Ubicacion</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer__option__item">
+                            <h5>Contactenos</h5>
+                            <p>Profailantismo es una inmobiliaria que se caracteriza por dar el mejor servicio posible a los clientes.</p>
+                            <form>
+                                <form action="https://formsubmit.co/agamezcastillojesus@gmail.com" method="POST">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                        
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                        
+                                <label for="coments">Mensaje</label>
+                                       <textarea name="comments" id="" cols="13" rows="2"></textarea>
+                                
+                                       <input type="submit" value="Enviar">
+                                
+  <input type="hidden" name="_next" value="http://localhost:5173">
+  <input type="hidden" name="_captcha" value="false">
+                            </form>
+       
+                             </div>
+                    </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <p class="footer__copyright__text"> &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            <i class="fa fa-heart-o"
+                                aria-hidden="true"></i> <a href="https://colorlib.com" target="_blank"></a>
+                        </p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="{% static 'js/jquery-3.3.1.min.js' %} "></script>
+    <script src="{% static 'js/inmobiliaria.min.js' %"></script>
+    <script src=" {% static 'js/jquery.magnific-popup.min.js' %} "></script>
+    <script src=" {% static 'js/mixitup.min.js' %}"></script>
+    <script src="{% static 'js/masonry.pkgd.min.js' %}"></script>
+    <script src="{% static 's/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

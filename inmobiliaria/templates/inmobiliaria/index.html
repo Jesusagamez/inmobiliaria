@@ -1,0 +1,571 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Inmobiliaria Template">
+    <meta name="keywords" content="Inmobiliaria, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inmobiliaria | Profailantismo</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href=" {% static 'css/inmobiliaria.min.css' %} " type="text/css">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %} " type="text/css">
+    <link rel="stylesheet" href="{% static 'css/elegant-icons.css' %} " type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %} " type="text/css">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %} " type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %} " type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %} " type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder  -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href=""><img src="" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav__option">
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                                <li class="active"><a href="{% url 'inmobiliaria:index' %}">INICIO</a></li>
+                                <li><a href="{% url 'inmobiliaria:about' %}">acerca de</a></li>
+                                <li><a href="{% url 'inmobiliaria:portfolio' %}">VIVIENDAS</a></li>
+                                <li><a href="">SERVICIOS</a></li>
+                                <li><a href="">Paginas</a>
+                                    <ul class="dropdown">
+                                        <li><a href="{% url 'inmobiliaria:blog' %}">contacto</a></li>
+                                        <li><a href="{% url 'inmobiliaria:contact' %}">Viviendas</a></li>
+                                        <li><a href="">Blog</a></li>
+                                        <li><a href="">Detalles de blog</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">contacto</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__nav__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="hero__slider owl-carousel">
+            <div class="hero__item set-bg" data-setbg=" {% static 'img/hero/hero-1.jpg' %} ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>Para tener la mejor experiencia de este sitio web</span>
+                                <h2>INMOBILIARIA PROFAILANTISMO</h2>
+                                <a href="#" class="primary-btn">Ver mas sobre nosotros</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__item set-bg" data-setbg=" {% static 'img/hero/hero-1.jpg' %} ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>Para tener la mejor experiencia de este sitio web</span>
+                                <h2>INMOBILIARIA PROFAILANTISMO</h2>
+                                <a href="#" class="primary-btn">Ver mas sobre nosotros</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__item set-bg" data-setbg=" {% static 'img/hero/hero-1.jpg' %} ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>Para tener la mejor experiencia de este sitio web</span>
+                                <h2>INMOBILIARIA PROFAILANTISMO</h2>
+                                <a href="#" class="primary-btn">Ver mas sobre nosotros</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="services spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="services__title">
+                        <div class="section-title">
+                            <span>Nuestros servicios</span>
+                            <h2>Quienes somos?</h2>
+                        </div>
+                        <p>Profailantismo (significado de esta palabra es aceptar el fracaso como combustible motivador para finalmente tener exito y lograr tus objetivos.), el objetivo que nos rige como Inmobiliaria 
+                            es que cada uno de nuestros clientes viva confiado 
+                            en la calidad de nuestros servicios, en nuestro compromiso y 
+                            experiencia en el sector.</p>
+                        <a href="#" class="primary-btn">Ver todos los servicios</a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="{% static 'img/icons/ci-3.png' %} " alt="">
+                                </div>
+                                <h4>NUESTRO ENFOQUE ES EL SERVICIO</h4>
+                                <p>PROFAILANTISMO es una empresa que ofrece servicios inmobiliarios integrales, con trabajo personalizado y especializado, enfocado siempre en el acompañamiento de nuestros clientes antes, durante y después de la negociación de arriendo o venta, identificando sus necesidades y cumpliendo con sus expectativas.</p>
+                            </div>
+                        </div>
+                          </div>
+                                
+                            </div>
+                        </div>   
+                                </div>
+                                <h4></h4>
+                                <p></p>
+                            </div>
+                        </div>
+                                </div>
+                                <h4></h4>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Work Section Begin -->
+    <section class="work">
+        <div class="work__gallery">
+            <div class="grid-sizer"></div> 
+            {% for inmueble in inmuebles %}
+            <a href="{% url 'inmobiliaria:inmueble_detail' inmueble.id %}">
+                <div class="work__item wide__item set-bg" data-setbg="{{ inmueble.foto_portada.url }} ">        
+                    <div class="work__item__hover">
+                        <h4>{{ inmueble.nombre }}</h4>
+                        <ul>
+                            <li>{{ inmueble.area }}</li>
+                            <li>{{ inmueble.ubicacion }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+            
+            {% endfor %}
+
+        <!--
+
+             <div class="work__item wide__item set-bg" data-setbg="{% static 'img/work/work-1.jpg' %} ">        
+                <div class="work__item__hover">
+                    <h4>A continuacion les mostrare una de todas las propiedades que tenemos disponibles</h4>
+                    <ul>
+                        <li>iNmobiliaria</li>
+                        <li>Profailantismo</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="{% static 'img/work/work-2.jpg' %} ">
+                <div class="work__item__hover">
+                    <h4>A continuacion les mostrare una de todas las propiedades que tenemos disponibles</h4>
+                    <ul>
+                        <li>iNmobiliaria</li>
+                        <li>Profailantismo</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="{% static 'img/work/work-3.jpg' %} ">
+                <div class="work__item__hover">
+                    <h4>A continuacion les mostrare una de todas las propiedades que tenemos disponibles</h4>
+                    <ul>
+                        <li>iNmobiliaria</li>
+                        <li>Profailantismo</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work__item large__item set-bg" data-setbg="{% static 'img/work/work-4.jpg' %} ">
+                   <div class="work__item__hover">
+                    <h4>lujosa VIP</h4>
+                    <ul>
+                        <li>iNmobiliaria</li>
+                        <li>Profailantismo</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="{% static 'img/work/work-5.jpg' %} ">
+                <div class="work__item__hover">
+                    <h4>A continuacion les mostrare una de todas las propiedades que tenemos disponibles</h4>
+                    <ul>
+                        <li>iNmobiliaria</li>
+                        <li>Profailantismo</li>
+                    </ul>
+                </div>     
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="{% static 'img/work/work-6.jpg' %} ">
+                <div class="work__item__hover">
+                    <h4>A continuacion les mostrare una de todas las propiedades que tenemos disponibles</h4>
+                    <ul>
+                        <li>iNmobiliaria</li>
+                        <li>Profailantismo</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work__item wide__item set-bg" data-setbg="{% static 'img/work/work-7.jpg' %} ">
+                   <div class="work__item__hover">
+                    <h4>lujosa VIP </h4>
+                    <ul>
+                        <li>iNmobiliaria</li>
+                        <li>Profailantismo</li>
+                    </ul>
+                </div>
+            </div>
+        -->
+           
+        </div>
+    </section>
+    <!-- Work Section End -->
+
+    <!-- Counter Section Begin -->
+    <section class="counter">
+        <div class="container">
+            <div class="counter__content">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item"> 
+                            <div class="counter__item__text">
+                                <img src="{% static 'img/icons/ci-1.png' %} " alt="">
+                                <h2 class="counter_num">230</h2>
+                                <p>Proyectos completados</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item second__item">
+                            <div class="counter__item__text">
+                                <img src="{% static 'img/icons/ci-2.png' %} " alt="">
+                                <h2 class="counter_num">1068</h2>
+                                <p>Clientes felices</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item third__item">
+                            <div class="counter__item__text">
+                                <img src="{% static 'img/icons/ci-3.png' %} " alt="">
+                                <h2 class="counter_num">230</h2>
+                                <p>Clientes potenciales</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item four__item">
+                            <div class="counter__item__text">
+                                <img src="{% static 'img/icons/ci-4.png' %} " alt="">
+                                <h2 class="counter_num">230</h2>
+                                <p>Proyectos completados</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Counter Section End -->
+
+    <!-- Team Section Begin -->
+    <section class="team spad set-bg" data-setbg="{% static 'img/team-bg.jpg' %} ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title team__title">
+                        <span>ENCANTADOS DE CONOCERTE</span>
+                        <h2>NUESTRO EQUIPO</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item set-bg" data-setbg="{% static 'img/team/team-1.jpg' %} ">
+                        <div class="team__item__text">
+                            <h4>AMANDA STONE</h4>
+                            <p>Empresaria</p>
+                            <div class="team__item__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0"> 
+                    <div class="team__item team__item--second set-bg" data-setbg="{% static 'img/team/team-2.jpg' %} ">
+                        <div class="team__item__text">
+                            <h4>JESUS STONE</h4>
+                            <p>Empresario</p>
+                            <div class="team__item__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item team__item--third set-bg" data-setbg="{% static 'img/team/team-3.jpg' %} ">
+                        <div class="team__item__text">
+                            <h4>TAMARA CASTILLO</h4>
+                            <p>Empresaria</p>
+                            <div class="team__item__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item team__item--four set-bg" data-setbg="{% static 'img/team/team-4.jpg' %} ">
+                        <div class="team__item__text">
+                            <h4>BRAYAN SOTO</h4>
+                            <p>EMPRESARIO Y CAMAROGRAFO</p>
+                            <div class="team__item__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 p-0">
+                    <div class="team__btn">
+                        <a href="#" class="primary-btn">Conozca a nuestro equipo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section End -->
+
+    <!-- Latest Blog Section Begin -->
+    <section class="latest spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title center-title">
+                        <span>NUESTRAS VIVIENDAS</span>
+                        <h2>ACTUALIZACION DE VIVIENDAS</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="latest__slider owl-carousel">
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>Anuncios de propiedades para alquilar?</h4>
+                            <ul>
+                                <li>dic 10, 2023</li>
+                                <li>05 Comentarios</li>
+                            </ul>
+                            <p>Propiedades para alquilar</p>
+                            <a href="#">leer más <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>Anuncios Profailantismo</h4>
+                            <ul>
+                                <li>Dic 10, 2023</li>
+                                <li>05 Commentarios</li>
+                            </ul>
+                            <p>Actualmente tenemos una nueva vivienda y queriamos compartirla...</p>
+                            <a href="#">leer más <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>Porque decidimos compartir esto con ustedes?</h4>
+                            <ul>
+                                <li>Dic 10, 2023</li>
+                                <li>05 Comment</li>
+                            </ul>
+                            <p>Decidimos mostrarles ya que ustedes son nuestro motivo para seguir consiguiendo y restaurando las mejores propiedades posibles...</p>
+                            <a href="#">leer más <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>Esta es una vivienda VIP</h4>
+                            <ul>
+                                <li>Dic 10, 2023</li>
+                                <li>05 Comment</li>
+                            </ul>
+                            <p>Es una vivienda VIP porque la persona que la compre o alquile contara con muchas oportunidades que nosotros les brindaremos...</p>
+                            <a href="#">leer más <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                       </div>
+                    </div>
+                      </div>
+                    </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Latest Blog Section End -->
+
+    <!-- Call To Action Section Begin -->
+    <section class="callto spad set-bg" data-setbg="{% static 'img/callto-bg.jpg' %} ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="callto__text">
+                        <h2>Ideas Frescas, Momentos frescos Dándole Alas a tus futuras viviendas.</h2>
+                        <p>LOS MEJORES LUGARES PARA VIVIR 2023</p>
+                        <a href="#">COMIENZA A VER TU PROPIEDAD</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__logo">
+                            <a href="#"><img src="img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__option">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer__option__item">
+                            <h5>Sobre nosotros</h5>
+                            <p>Formada en 2020 por jesus stone y Tamara castillo,
+                                profailantismo es una inmobiliaria especializada en servicios completos y de la mas alta calidad.</p>
+                            <a href="#" class="read__more">Leer más <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer__option__item">
+                            <h5>Quienes somos</h5>
+                            <ul>
+                                <li><a href="#">Equipo</a></li>
+                                <li><a href="#">Viviendas</a></li>
+                                 <li><a href="#">Ubicaciones</a></li>
+                                 <a href="#" class="read__more">Leer más <span class="arrow_right"></span></a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer__option__item">
+                            <h5>Contactenos</h5>
+                            <p>Profailantismo es una inmobiliaria que se caracteriza por dar el mejor servicio posible a los clientes.</p>
+                            <form>
+                                <form action="https://formsubmit.co/agamezcastillojesus@gmail.com" method="POST">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                        
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                        
+                                <label for="coments">Mensaje</label>
+                                       <textarea name="comments" id="" cols="14" rows="2"></textarea>
+                                
+                                       <input type="submit" value="Enviar">
+                                
+  <input type="hidden" name="_next" value="http://localhost:5173">
+  <input type="hidden" name="_captcha" value="false">
+                            </form>
+                        </div>
+                    </div>
+                    
+                        </div>
+                    </div>
+                </div>
+   </div>
+   <div class="footer__copyright">
+   <div class="row">
+   <div class="col-lg-12 text-center">
+   <p class="footer__copyright__text"> &copy;
+   <script>
+   document.write(new Date().getFullYear());
+   </script>
+   <i class="fa fa-heart-o"
+   aria-hidden="true"></i><a href="https://colorlib.com" target="_blank"></a>
+    </p>
+     </div>
+    </div>
+    </div>
+    </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="{% static 'js/jquery-3.3.1.min.js' %} "></script>
+    <script src="{% static 'js/inmobiliaria.min.js' %} "></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %} "></script>
+    <script src="{% static 'js/mixitup.min.js' %} "></script>
+    <script src="{% static 'js/masonry.pkgd.min.js' %} "></script>
+    <script src="{% static 'js/jquery.slicknav.js' %} "></script>
+    <script src="{% static 'js/owl.carousel.min.js' %} "></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
