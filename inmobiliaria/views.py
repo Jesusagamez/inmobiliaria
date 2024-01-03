@@ -4,7 +4,6 @@ from .models import Inmueble
 
 
 def index(request):
-    # Obtén todos los inmuebles desde la base de datos
     inmuebles = Inmueble.objects.all()
     return render(request, 'inmobiliaria/index.html' , {'inmuebles': inmuebles})
 
@@ -25,7 +24,11 @@ def contact(request):
     return render (request, 'inmobiliaria/contact.html')
 
 def portfolio(request):
-    return render (request, 'inmobiliaria/portfolio.html')
+    
+    return render (request, 'inmobiliaria/portfolio.html',{
+        "categorias":[cat[1] for cat in Inmueble.CATEGORIAS_CHOICES],
+        "inmuebles":Inmueble.objects.all(),
+    })
 
 def services(request):
     return render (request, 'inmobiliaria/services.html')

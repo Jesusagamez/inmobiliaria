@@ -47,16 +47,16 @@
                                 <li class="active"><a href="{% url 'inmobiliaria:index' %}">INICIO</a></li>
                                 <li><a href="{% url 'inmobiliaria:about' %}">acerca de</a></li>
                                 <li><a href="{% url 'inmobiliaria:portfolio' %}">VIVIENDAS</a></li>
-                                <li><a href="">SERVICIOS</a></li>
+                                <li><a href=""></a></li>
                                 <li><a href="">Paginas</a>
                                     <ul class="dropdown">
-                                        <li><a href="{% url 'inmobiliaria:blog' %}">contacto</a></li>
+                                        <li><a href="{% url 'inmobiliaria:blog' %}"></a></li>
                                         <li><a href="{% url 'inmobiliaria:contact' %}">Viviendas</a></li>
                                         <li><a href="">Blog</a></li>
                                         <li><a href="">Detalles de blog</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="">contacto</a></li>
+                                <li><a href=""></a></li>
                             </ul>
                         </nav>
                         <div class="header__nav__social">
@@ -398,6 +398,292 @@
                     </div>
                 </div>
             </div>
+                                         <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static "css/inmobiliaria.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/elegant-icons.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/owl.carousel.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/magnific-popup.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/slicknav.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/style.css" %}" type="text/css">
+</head>
+
+<div class="breadcrumb-option spad set-bg" data-setbg="{% static "img/breadcrumb-bg.jpg" %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="breadcrumb__text">
+                    <h2>Nuestros servicios</h2>
+                    <div class="breadcrumb__links">
+                        <a href="#"></a>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="services-page spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="services__item">
+                    <div class="services__item__icon">
+                        <img src="{% static "img/icons/si-2.png" %}" alt="">
+                    </div>
+                    <h4>Escritura a sus nombres de la vivienda que quieras</h4>
+                    <p>Ya sea que estes a mitad del proceso de una compra o que nisiquiera hayas comenzado, nuestros servicios de acompañamiendo en tu proceso de cualquier compra es nuestra prioridad.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="services__item">
+                    <div class="services__item__icon">
+                        <img src="{% static "img/icons/si-1.png" %}" alt="">
+                    </div>
+                    <h4>Fotografias de la mejor calidad y más</h4>
+                    <p>Puedes ver nuestras casas disponibles y mucho mas en la mejor calidad que pueda haber.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="services__item">
+                    <div class="services__item__icon">
+                        <img src="{% static "img/icons/si-5.png" %}" alt="">
+                    </div>
+                    <h4>Acompañamiento en todo tu proceso</h4>
+                    <p>Nuestra obligacion es darles a los clientes la mejor atencion posible para que se sientan seguros con nosotros y con las viviendas que ofrecemos.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="services__item">
+                    <div class="services__item__icon">
+                        <img src="{% static "img/icons/si-3.png" %}" alt="">
+                    </div>
+                    <h4>Distribucios de videos de las viviendas disponibles</h4>
+                    <p>Ya sea que las quieran ver por medio de videos, se los permitiremos para que tengan la mejor experiencia.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="services__item">
+                    <div class="services__item__icon">
+                        <img src="{% static "img/icons/si-4.png" %}" alt="">
+                    </div>
+                    <h4>Calidad en lo que ofrecemos</h4>
+                    <p>Les permitimos ver y probar la casa por varios dias para que decidan si quieren adquirirla.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="services__item">
+                    <div class="services__item__icon">
+                        <img src="{% static "img/icons/si-6.png" %}" alt="">
+                    </div>
+                    <h4>Seguridad y garantias</h4>
+                    <p>Con nosotros tendran una garantia de por vida, por si llegan a tener algun inconveniente con la vivienda que le ofrecemos, nosotros mismos nos encargaremos de repararla o inclusive remodelarla a su gusto.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Services Section End -->
+
+<!-- Call To Action Section Begin 
+<section class="callto sp__callto">
+    <div class="container">
+        <div class="callto__services spad set-bg" data-setbg="img/calltos-bg.WEBP">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <div class="callto__text">
+                        <h2>CREA TU VIVIENDA A TU GUSTO.</h2>
+                        <p>LE CONCEDEMOS QUE AL MOMENTO DE COMPRAR SU PROPIEDAD TENGAN EL DERECHO DE INFORMARNOS COMO QUIEREN SU VIVIENDA REMODELADA Y NOSOTROS NOS ENCARGAMOS DE ESO</p>
+                        <a href="#">COMIENZA CON NOSOTROS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Call To Action Section End -->
+
+<!-- Logo Begin 
+<div class="logo spad">
+    <div class="container">
+        <div class="logo__carousel owl-carousel">
+            <a href="#" class="logo__item"><img src="{% static "img/logo/logo-1.png" %}" alt=""></a>
+            <a href="#" class="logo__item"><img src="{% static "img/logo/logo-2.png" %}" alt=""></a>
+            <a href="#" class="logo__item"><img src="{% static "img/logo/logo-3.png" %}" alt=""></a>
+            <a href="#" class="logo__item"><img src="{% static "img/logo/logo-4.png" %}" alt=""></a>
+            <a href="#" class="logo__item"><img src="{% static "img/logo/logo-5.png" %}" alt=""></a>
+            <a href="#" class="logo__item"><img src="{% static "img/logo/logo-6.png" %}" alt=""></a>
+        -->
+        </div>
+    </div>
+</div>
+<!-- Logo End -->
+
+<!-- Footer Section Begin -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="footer__top__logo">
+                        <a href="#"><img src="{% static "img/logo.png" %}" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="footer__top__social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="{% static "js/jquery-3.3.1.min.js" %}"></script>
+        <script src="{% static "js/inmobiliaria.min.js" %}"></script>
+        <script src="{% static "js/jquery.magnific-popup.min.js" %}"></script>
+        <script src="{% static "js/mixitup.min.js" %}"></script>
+        <script src="{% static "js/masonry.pkgd.min.js" %}"></script>
+        <script src="{% static "js/jquery.slicknav.js" %}"></script>
+        <script src="{% static "js/owl.carousel.min.js" %}"></script>
+        <script src="{% static "js/main.js" %}"></script>
+    </body>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static "css/inmobiliaria.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/elegant-icons.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/owl.carousel.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/magnific-popup.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/slicknav.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/style.css" %}" type="text/css">
+</head>
+
+<!-- Header End -->
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option spad set-bg" data-setbg="{% static "img/breadcrumb-bg.jpg" %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Contactenos</h2>
+                        <div class="breadcrumb__links">
+                            <a href="#"></a>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Contact Widget Section Begin -->
+    <section class="contact-widget spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-md-6 col-md-3">
+                    <div class="contact__widget__item">
+                        <div class="contact__widget__item__icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="contact__widget__item__text">
+                            <h4>Direccion</h4>
+                            <p>Los Angeles Gournadi, 1230 Bariasl</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-md-6 col-md-3">
+                    <div class="contact__widget__item">
+                        <div class="contact__widget__item__icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="contact__widget__item__text">
+                            <h4>Linea directa</h4>
+                            <p>1-333-111-22227 • 1-488-656-66789</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-md-6 col-md-3">
+                    <div class="contact__widget__item">
+                        <div class="contact__widget__item__icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="contact__widget__item__text">
+                            <h4>Email</h4>
+                            <p>Support@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Widget Section End -->
+
+    <!-- Call To Action Section Begin -->
+    <section class="contact spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="contact__map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2798902705!2d-74.25986790365917!3d40.697670067823786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1596152431947!5m2!1sen!2sbd"
+                            height="450" style="border:0;"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="contact__form">
+                        <h3>Ponerse en contacto</h3>
+                        <form action="#">
+                            <input type="text" placeholder="Nombre">
+                            <input type="text" placeholder="Email">
+                            <input type="text" placeholder="Sitio web">
+                            <textarea placeholder="Message"></textarea>
+                            <button type="submit" class="site-btn">Enviar mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__logo">
+                            <a href="#"><img src="{% static "img/logo.png" %}" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <!-- Js Plugins -->
+    <script src="{% static "js/jquery-3.3.1.min.js" %}"></script>
+    <script src="{% static "js/inmobiliaria.min.js" %}"></script>
+    <script src="{% static "js/jquery.magnific-popup.min.js" %}"></script>
+    <script src="{% static "js/mixitup.min.js" %}"></script>
+    <script src="{% static "js/masonry.pkgd.min.js" %}"></script>
+    <script src="{% static "js/jquery.slicknav.js" %}"></script>
+    <script src="{% static "js/owl.carousel.min.js" %}"></script>
+    <script src="{% static "js/main.js" %}"></script>
+</body>
+
             <div class="footer__option">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6">
@@ -423,6 +709,8 @@
                         <div class="footer__option__item">
                             <h5>Contactenos</h5>
                             <p>Profailantismo es una inmobiliaria que se caracteriza por dar el mejor servicio posible a los clientes.</p>
+                            
+
                             <form>
                                 <form action="https://formsubmit.co/agamezcastillojesus@gmail.com" method="POST">
                                 <label for="nombre">Nombre:</label>

@@ -90,11 +90,17 @@
                     </div>
                 </div>
             </div>
+                   <!-- se obtiene la visualizacion de la ruta virtual por medio de la plataforma kula-->
+            {% if inmueble.ruta_link %}
+                <script src="https://static.kuula.io/embed.js" data-kuula="{{ inmueble.ruta_link }}" data-width="100%" data-height="640px"></script>
+            {% endif %}
         </div>
+        
+        
     </section>
     <!-- About Section End -->
 
-    
+   
 
     <!-- Footer Section Begin -->
     <footer class="footer">
